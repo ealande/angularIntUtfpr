@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { ClienteComponent } from './cliente/cliente.component';
 import { FormsModule } from '@angular/forms';
 import { ProdutoComponent } from './produto/produto.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ListarClienteComponent } from './listar-cliente/listar-cliente.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClienteComponent,
-    ProdutoComponent
+    ProdutoComponent,
+    ListarClienteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
